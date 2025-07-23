@@ -1,7 +1,11 @@
+import os
+from dotenv import load_dotenv
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "7983901697:AAGQEE8hhaPA-ggkBiydiziiz8M0WPYVTgU"
+load_dotenv()
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 
 # Memory
 waiting_users = []  # (user_id, age, gender)
