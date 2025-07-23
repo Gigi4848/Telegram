@@ -1,9 +1,1 @@
-services:
-  - type: worker
-    name: telegram
-    env: python
-    buildCommand: ""
-    startCommand: python bot.py
-    envVars:
-      - key: TELEGRAM_BOT_TOKEN
-        value: 7983901697:AAGQEE8hhaPA-ggkBiydiziiz8M0WPYVTgU
+
